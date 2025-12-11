@@ -97,7 +97,7 @@ if __name__ == '__main__':
         if ep.best_GT_mean:
             weight_path = './weights/LOLv2_real/w_perc.pth'
         elif ep.best_PSNR:
-            weight_path = './weights/train/epoch_410.pth'
+            weight_path = './weights/LOLv2_real/w_perc.pth'
         elif ep.best_SSIM:
             weight_path = './weights/LOLv2_real/best_SSIM.pth'
 
@@ -108,7 +108,7 @@ if __name__ == '__main__':
         if ep.perc:
             weight_path = './weights/LOLv2_syn/w_perc.pth'
         else:
-            weight_path = './weights/train/epoch_810.pth'
+            weight_path = './weights/LOLv2_syn/w_perc.pth'
 
     elif ep.SICE_grad:
         eval_data = DataLoader(dataset=get_SICE_eval_set("./datasets/SICE/SICE_Grad"), num_workers=num_workers,
