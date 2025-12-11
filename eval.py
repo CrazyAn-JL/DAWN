@@ -85,9 +85,9 @@ if __name__ == '__main__':
                                batch_size=1, shuffle=False)
         output_folder = './output/LOLv1/'
         if ep.perc:
-            weight_path = './weights/LOLv1/w_perc.pth'
+            weight_path = './weights/LOLv1/lolv1.pth'
         else:
-            weight_path = './weights/LOLv1/wo_perc.pth'
+            weight_path = './weights/LOLv1/lolv1.pth'
 
 
     elif ep.lol_v2_real:
@@ -95,20 +95,20 @@ if __name__ == '__main__':
                                batch_size=1, shuffle=False)
         output_folder = './output/LOLv2_real/'
         if ep.best_GT_mean:
-            weight_path = './weights/LOLv2_real/w_perc.pth'
+            weight_path = './weights/LOLv2_real/lolv2-real.pth'
         elif ep.best_PSNR:
-            weight_path = './weights/LOLv2_real/w_perc.pth'
+            weight_path = './weights/LOLv2_real/lolv2-real.pth'
         elif ep.best_SSIM:
-            weight_path = './weights/LOLv2_real/best_SSIM.pth'
+            weight_path = './weights/LOLv2_real/lolv2-real.pth'
 
     elif ep.lol_v2_syn:
         eval_data = DataLoader(dataset=get_eval_set("./datasets/LOLv2/Synthetic/Test/Low"), num_workers=num_workers,
                                batch_size=1, shuffle=False)
         output_folder = './output/LOLv2_syn/'
         if ep.perc:
-            weight_path = './weights/LOLv2_syn/w_perc.pth'
+            weight_path = './weights/LOLv2_syn/lolv2-syn.pth'
         else:
-            weight_path = './weights/LOLv2_syn/w_perc.pth'
+            weight_path = './weights/LOLv2_syn/lolv2-syn.pth'
 
     elif ep.SICE_grad:
         eval_data = DataLoader(dataset=get_SICE_eval_set("./datasets/SICE/SICE_Grad"), num_workers=num_workers,
