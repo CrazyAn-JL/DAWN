@@ -1,6 +1,6 @@
-# Dual-Domain Synergy: Enhancing Low-Light Images with Kolmogorov-Arnold Networks
+# Global Structure Guidance and Adaptive Feature Recalibration Network for Low-Light Image Enhancement
 
-This is the official implementation of the manuscript Dual-Domain Synergy: Enhancing Low-Light Images with Kolmogorov-Arnold Networks.
+This is the official implementation of the manuscript Global Structure Guidance and Adaptive Feature Recalibration Network for Low-Light Image Enhancement.
 
 ![Fig 1](https://github.com/CrazyAn-JL/DAWN/blob/main/DAWN.png)
 
